@@ -6,13 +6,14 @@ AOS.init({
   easing: 'ease', // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 });
 function togglePopup(message) {
-  document.getElementById("body").classList.toggle("overflow-hidden")
+  document.getElementById("body").classList.toggle("overflow-hidden");
   document.getElementById("popup-1").classList.toggle("active");
-  let title = document.getElementById("titlePopup")
-  let content = document.getElementById("contentPopup")
+  window.location.href = '#projects';
+  let title = document.getElementById("titlePopup");
+  let content = document.getElementById("contentPopup");
   switch (message) {
     case 1:
       title.innerHTML = 'Diseño página sign in - 2024 (Google)';
@@ -31,5 +32,5 @@ function togglePopup(message) {
       break;
     default:
       break;
-  }
-}
+  };
+};
