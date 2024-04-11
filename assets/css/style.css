@@ -139,6 +139,9 @@ img {
 .projectBtn {
     text-align: center;
 }
+.projectDescription {
+    max-width: 550px !important;
+}
 
 /* POP-UPS */
 .popup .overlay {
