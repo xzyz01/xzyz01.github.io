@@ -11,6 +11,7 @@
     --bg1: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.435)), url(../img/hero1.png);
     --bg2: linear-gradient(rgba(var(--c-brand-rgb), .8), rgba(var(--c-brand-rgb), .8)), url(../img/hero1.png);
 }
+
 /* RESET & HELPERS??????????????????????????? */
 body {
     font-family: var(--font-base);
@@ -54,10 +55,30 @@ img {
     footer {
         padding-top: 70px !important;
     }
+    #projects .row .team-member.image-zoom {
+        padding-top: 50px !important;
+    }
+}
+@media (max-width: 765px) {
+    .popup.active .content {
+        width: 75%;
+    }
+}
+@media (max-width: 450px) {
+    .popup.active .content {
+        width: 100%;
+    }
 }
 .justify-content-space-around {
     justify-content: space-around !important;
 }
+.justify-content-space-evenly {
+    justify-content: space-evenly !important;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+
 /* IMAGE ZOOM */
 .image-zoom {
     position: relative;
@@ -73,6 +94,7 @@ img {
 .image-zoom:hover .image-zoom-wrapper img {
     transform: scale(1.1);
 }
+
 /* NAV */
 .navbar {
     box-shadow: var(--box-shadow);
@@ -86,6 +108,7 @@ img {
 .navbar-nav .nav-link.active {
     color: var(--c-brand);
 }
+
 /* BUTTONS */
 .btn {
     font-weight: 600;
@@ -104,12 +127,14 @@ img {
     border-color: var(--c-brand-light);
     color: white;
 }
+
 /* HERO */
 #hero {
     background: var(--bg1);
     background-position: center;
     background-size: cover;
 }
+
 /* POP UPS */
 .popup .overlay {
     position: fixed;
@@ -161,7 +186,9 @@ img {
 .popup.active .content {
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
+    overflow: hidden;
 }
+
 /* SECTION TITLE */
 .section-title {
     margin-bottom: 60px;
@@ -177,6 +204,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* ICONBOX */
 .iconbox {
     width: 70px;
@@ -189,11 +217,13 @@ img {
     font-size: 34px;
     flex: none;
 }
-/* speciality */
+
+/* SPECIALITY */
 .speciality {
     position: relative;
     overflow: hidden;
     z-index: 2;
+    height: 100%;
 }
 .speciality::after {
     content: "";
@@ -219,7 +249,8 @@ img {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-/* Contact Form */
+
+/* CONTACT FORM */
 #form {
     position: relative;
     z-index: 2;
@@ -243,6 +274,7 @@ img {
     box-shadow: none;
     border-color: var(--c-brand);
 }
+
 /* FOOTER */
 footer {
     /* padding-top: 120px; */
