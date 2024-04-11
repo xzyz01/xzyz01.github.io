@@ -135,7 +135,12 @@ img {
     background-size: cover;
 }
 
-/* POP UPS */
+/* PROJECTS */
+.projectBtn {
+    text-align: center;
+}
+
+/* POP-UPS */
 .popup .overlay {
     position: fixed;
     top: 0px;
