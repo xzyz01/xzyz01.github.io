@@ -100,6 +100,7 @@ img {
     box-shadow: var(--box-shadow);
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 .navbar-nav .nav-link {
     font-weight: 500;
