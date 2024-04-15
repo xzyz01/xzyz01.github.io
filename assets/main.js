@@ -9,7 +9,7 @@ AOS.init({
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 });
 function togglePopup(message) {
-  document.getElementById("body").classList.toggle("overflow-hidden");
+  document.getElementById("body").style.overflow = "hidden";
   document.getElementById("popup-1").classList.toggle("active");
   window.location.href = '#projects';
   let title = document.getElementById("titlePopup");
