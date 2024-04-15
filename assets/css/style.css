@@ -153,7 +153,7 @@ img {
     border: 0 solid;
     box-sizing: border-box;
 }
-.projectBtn {
+.projectBtn button {
     -webkit-tap-highlight-color: transparent;
     -webkit-appearance: button;
     background-color: #000;
@@ -169,16 +169,16 @@ img {
     -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
     padding: 0;
 }
-.projectBtn:disabled {
+.projectBtn button:disabled {
     cursor: default;
 }
-.projectBtn:-moz-focusring {
+.projectBtn button:-moz-focusring {
     outline: auto;
 }
-.projectBtn [hidden] {
+.projectBtn button [hidden] {
     display: none;
 }
-.projectBtn {
+.projectBtn button {
     --height: 40px;
     --progress: 0px;
     border: 2px solid #fff;
@@ -192,13 +192,13 @@ img {
     padding: 0 60px;
     position: relative;
     text-shadow: 0 calc(var(--progress) * -1) #fff,
-        0 calc(var(--height) - var(--progress)) wheat;
+        0 calc(var(--height) - var(--progress)) var(--c-brand);
     text-transform: uppercase;
     transition: 0.2s;
 }
-.projectBtn:hover {
+.projectBtn button:hover {
     --progress: var(--height);
-    border-color: wheat;
+    border-color: var(--c-brand);
 }
 
 .projectDescription {
