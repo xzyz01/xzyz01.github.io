@@ -138,18 +138,15 @@ img {
 
 /* PROJECTS */
 .projectBtn {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .projectBtn button {
     border-radius: 6px;
 }
 
-.projectBtn,
-.projectBtn *,
-.projectBtn :after,
-.projectBtn :before,
-.projectBtn:after,
-.projectBtn:before {
+.projectBtn, .projectBtn *, .projectBtn :after, .projectBtn :before, .projectBtn:after, .projectBtn:before {
     border: 0 solid;
     box-sizing: border-box;
 }
